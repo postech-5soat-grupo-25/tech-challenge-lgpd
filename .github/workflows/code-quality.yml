@@ -1,15 +1,19 @@
-name: Code Quality
-
+name: Build
 on:
   push:
     branches:
       - main
   pull_request:
     types: [opened, synchronize, reopened]
-
 jobs:
-  quality:
-    name: Check
-    uses: postech-5soat-grupo-25/tech-challenge-templates/.github/workflows/code-quality.yml@main
-    secrets:
-      sonarcloud_token: ${{ secrets.SONARCLOUD_TOKEN }}
+  sonarcloud:
+    name: SonarCloud
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@master
+        env:
+          SONAR_TOKEN: ${{ secrets.SONARCLOUD_TOKEN }}
