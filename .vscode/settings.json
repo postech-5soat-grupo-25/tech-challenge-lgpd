@@ -1,0 +1,14 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "name": "tech-challenge-lgpd-db",
+            "username": "postgres",
+            "database": "lgpd"
+        }
+    ]
+}
