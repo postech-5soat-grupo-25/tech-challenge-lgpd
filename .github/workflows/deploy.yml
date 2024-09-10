@@ -1,9 +1,9 @@
 name: Deploy
 
 on:
-    workflow_dispatch:
-    pull_request:
-      types: [opened, synchronize, reopened]  
+  workflow_dispatch:
+  pull_request:
+    types: [opened, synchronize, reopened]
 
 env:
   CARGO_TERM_COLOR: always
@@ -13,6 +13,7 @@ env:
 
 jobs:
   deploy:
+    if: github.event_name == 'workflow_dispatch'
     name: Deploy LGPD App
     runs-on: ubuntu-latest
 
