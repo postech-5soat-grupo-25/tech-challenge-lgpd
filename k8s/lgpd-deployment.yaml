@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lgpd-app
+  labels:
+    app: lgpd-app
+spec:
+  template:
+    metadata:
+      name: lgpd-app
+      labels:
+        app: lgpd-app
+    spec:
+      containers:
+        - name: lgpd-app-container
+          image: 739842188003.dkr.ecr.us-east-1.amazonaws.com/lgpd_api:latest
+          ports:
+            - containerPort: 8000   
+          envFrom:
+          - configMapRef:
+              name: lgpd-configmap      
+          resources:
+            requests:
+              cpu: 1m
+  replicas: 1
+  selector:
+    matchLabels:
+      app: lgpd-app

@@ -1,7 +1,6 @@
 # `Tech Challenge` | PosTech 5SOAT • Grupo 25
 
-![microservice](https://img.shields.io/badge/lgpd-blue?label=microsservi%C3%A7o&labelColor=%23505050&color=%23d63865) 
-[![sonarcloud](https://sonarcloud.io/api/project_badges/measure?project=postech-5soat-grupo-25_tech-challenge-lgpd&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=postech-5soat-grupo-25_tech-challenge-lgpd) [![codecov](https://codecov.io/gh/postech-5soat-grupo-25/tech-challenge-lgpd/graph/badge.svg?token=O85UX0WQ43)](https://codecov.io/gh/postech-5soat-grupo-25/tech-challenge-lgpd)
+![microservice](https://img.shields.io/badge/lgpd-blue?label=microsservi%C3%A7o&labelColor=%23505050&color=%23d63865) ![Python](https://img.shields.io/badge/Python-505050?logo=python&logoColor=FFFFFF&labelColor=3776AB) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-505050?logo=postgresql&logoColor=FFFFFF&labelColor=4169E1) [![sonarcloud](https://sonarcloud.io/api/project_badges/measure?project=postech-5soat-grupo-25_tech-challenge-lgpd&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=postech-5soat-grupo-25_tech-challenge-lgpd) [![codecov](https://codecov.io/gh/postech-5soat-grupo-25/tech-challenge-lgpd/graph/badge.svg?token=O85UX0WQ43)](https://codecov.io/gh/postech-5soat-grupo-25/tech-challenge-lgpd)
 
 ## Sobre o Projeto
 
