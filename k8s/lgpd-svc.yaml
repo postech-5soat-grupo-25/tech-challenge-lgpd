@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: lgpd-app-nodeport-svc
+spec:
+  type: NodePort
+  selector:
+    app: lgpd-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8000
+      nodePort: 31205
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: lgpd-app-loadbalancer-svc
+spec:
+  type: LoadBalancer
+  selector:
+    app: lgpd-app 
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8000
